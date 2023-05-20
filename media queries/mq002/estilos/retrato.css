@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* CONFIGURAÇÕES EM MODO RETRATO (portrait) */
+
+/* ATENÇÃO: SÓ FAÇO AS CONFIGURAÇÕES AQUI QUE SÃO DIFERENTES, QUE SÃO ESPECÍFICAS PARA ESSE MODO */
+
+body {
+    background-color: rgb(9, 9, 144);
+    background-image: url(../../img/imagens/cev-portrait.jpg);
+}
+
+
+h1 {
+    color: orange;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    padding: 10px;
+}
