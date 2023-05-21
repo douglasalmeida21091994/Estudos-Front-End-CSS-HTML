@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical  Device Breakpoints
+
+Pequenas telas: Até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop:  de 992px até 1200px
+Grandes telas: acima de 1200px
+
+*/
+
+@media print { /* o Backgroun-image aqui é desnecessário, pois ao imprimir não sai */
+
+    body {
+        font-family: 'Courier New', Courier, monospace;        
+    } 
+    
+    main {
+        border: 1px solid black;
+        width: 90vw;
+    }
+
+   
+    main h1 {
+        color: black;
+        
+    }    
+
+        main::after {
+            content: "Douglas Almeida";
+            text-decoration: overline;
+            display: flex;      
+            justify-content: center;   
+            padding: 5px 0px;            
+        }
+        
+}
+
+/* não usarei esta abaixo: 
+
+@media screen and (max-width: 600px){
+
+}
+    
+@media screen and (max-width: 600px) and (max-width: 768px) {
+    
+}
+
+*/
+
+/* Usarei a de baixo: */
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /* TELA DE TABLET */
+
+    body {
+        background-image: url(../../img/imagens/back-tablet.jpg);
+    }
+    
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: block;
+    }
+
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* TELA DE DESKTOP */
+
+    body {
+        background-image: url(../../img/imagens/back-pc.jpg);
+    }
+
+    #phone {
+        display: none;
+    }
+    
+    #tablet {
+        display: none;
+    }
+
+    #pc {
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) { /* TELA DE TV OU MAIORES */
+
+    body {
+        background-image: url(../../img/imagens/back-tv.jpg);
+    }
+
+    #phone {
+        display: none;
+    }
+    
+    #tablet {
+        display: none;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #tv {
+        display: block;
+    }
+    
+}
+

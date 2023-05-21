@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/* VERSÃO MOBILE FIRST */
+
+:root {
+    --cor01: linear-gradient(to right, blue, orange);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background: black url(../../img/imagens/back-phone.jpg)no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.381);
+    backdrop-filter: blur(3px); /* efeito vidro / desfoque */
+    
+    width: 400px;
+    align-items: center;    
+
+    border-radius: 5px;
+    padding: 10px;          
+}
+
+h1 {
+    text-align: center;
+    
+    background-image: var(--cor01);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+   /* com o código acima posso colocar um linear gradient no text, com cores, uma variável já definida ou com uma imagem || com imagem é só colocar a URL */
+    
+}
+
+h2 {
+    color: var(--gradient);
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+#phone {
+    display: block;
+}
+
+#tablet {
+    display: none;
+}
+
+#print {
+    display: none;
+}
+
+#pc {
+    display: none;
+}
+
+#tv {
+    display: none;
+}
+
